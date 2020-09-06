@@ -1,7 +1,7 @@
 
 let weather = () => {
     let cityname = $("#user_input").val();
-    let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=5daaf952fbe609f81bbb2325c839b7fb&q=" + cityname;
+    let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=use here key=" + cityname;
     $.ajax(url).done((data) => {
         $("#parent :nth-child(1)")
             .clone(true)
