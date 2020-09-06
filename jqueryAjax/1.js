@@ -2,7 +2,7 @@ function checkWeather() {
 
     let xhr = new XMLHttpRequest;
     let cityname = document.querySelector("#user").value;
-    let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=5daaf952fbe609f81bbb2325c839b7fb&q=" + cityname;
+    let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=use api key=" + cityname;
     xhr.open("get", url);
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status == 200) {
